@@ -1,0 +1,62 @@
+form#new-car {
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px; */
+  justify-content: center;
+  align-items: center;
+  background: #eff1f3;
+  height: 780px;
+  /* border-radius: 10px; */
+  -webkit-box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset;
+  -moz-box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset;
+  box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset;
+}
+
+form#new-car input {
+  background: rgba(0, 0, 0, 0.3);
+  border: 0;
+  border-radius: 4px;
+  width: 300px;
+  height: 44px;
+  padding: 0 15px;
+  color: #000;
+  margin: 0 0 10px;
+}
+
+form#new-car input::placeholder {
+  color: rgba(220, 220, 220, 1);
+}
+
+form#new-car span {
+  color: #3b9eff;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+form#new-car button {
+  margin: 5px 0 0;
+  height: 44px;
+  width: 300px;
+  background: #3b9eff;
+  font-weight: bold;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+form#new-car button:hover {
+  background: #3b9eff;
+}
+
+form#new-car a {
+  color: #000;
+  margin-top: 15px;
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+form#new-car a:hover {
+  opacity: 1;
+}
