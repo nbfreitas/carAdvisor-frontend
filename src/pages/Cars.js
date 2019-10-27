@@ -63,7 +63,7 @@ class Cars extends Component {
           (function () {
             window.onload = function () {
               new BlipChat()
-                .withAppKey(process.env.APPKEY_BLIP)
+                .withAppKey('Y2FyYWR2aXNvcjo0NzBjNmEyNi04YWRhLTQ5N2QtODE2NS1iYjgxMDgyMTM3NDg=')
                 .withButton({"color":"#424a60","icon":""})
                .build();
              }

@@ -1,14 +1,14 @@
 module.exports = {
   env: {
     es6: true,
-    // jest: true,
+    jest: true,
     browser: true
   },
   extends: ["airbnb", "prettier", "prettier/react"],
   globals: {
     Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
-    // __DEV__: true
+    SharedArrayBuffer: "readonly",
+    __DEV__: true
   },
   parserOptions: {
     ecmaFeatures: {
