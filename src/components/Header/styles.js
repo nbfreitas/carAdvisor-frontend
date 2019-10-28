@@ -25,6 +25,9 @@ export const Content = styled.div`
     }
 
     a {
+      margin-left: 10px;
+      font-size: 15px;
+      color: rgba(0, 0, 0, 0.8);
       font-weight: bold;
     }
   }
@@ -56,16 +59,9 @@ export const Profile = styled.div`
       /* margin-left: 30px;
       margin-right: 10px; */
       margin-top: 2px;
-      font-size: 12px;
-      /* font-weight: bold; */
+      font-size: 15px;
+      font-weight: bold;
       color: rgba(0, 0, 0, 0.8);
     }
-  }
-  img {
-    /* float: right; */
-    /* width: 22px; */
-    height: 42px;
-    /* margin-right: 50px; */
-    border-radius: 50%;
   }
 `;
