@@ -38,7 +38,7 @@ class Cars extends Component {
           
           <header>
             <div className="car-model">
-              <span>{post.brand} {post.model}</span>
+              <span className='model'>{post.brand} {post.model}</span>
               <span className='version'>{post.version}</span>
             </div>
           </header>

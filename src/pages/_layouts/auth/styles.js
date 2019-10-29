@@ -2,17 +2,16 @@ import styled from "styled-components";
 import { darken } from "polished";
 
 export const Wrapper = styled.div`
-  height: 100%;
-  background: linear-gradient(-150deg, #fff, #dcdcdc);
-  display: flex;
+  /* height: 100%; */
+  /* display: flex; */
   justify-content: center;
   align-items: center;
 `;
 
 export const Content = styled.div`
   width: 100%;
-  max-width: 90%;
-  text-align: center;
+  /* max-width: 90%; */
+  /* text-align: center; */
 
   form {
     display: flex;

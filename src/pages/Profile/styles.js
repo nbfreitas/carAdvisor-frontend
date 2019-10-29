@@ -17,7 +17,7 @@ export const Container = styled.div`
     margin-top: 30px;
 
     input {
-      background: rgba(0, 0, 0, 0.1);
+      background: rgba(0, 0, 0, 0.3);
       border: 0;
       border-radius: 4px;
       height: 44px;
@@ -27,7 +27,7 @@ export const Container = styled.div`
       margin: 0 0 10px;
 
       &::placeholder {
-        color: rgba(153, 153, 153, 0.7);
+        color: rgba(220, 220, 220, 1);
       }
     }
 

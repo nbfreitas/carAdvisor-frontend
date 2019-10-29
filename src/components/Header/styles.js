@@ -17,15 +17,22 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
 
-    img {
+    img#logo {
       margin-right: 20px;
       padding-right: 20px;
-      /* height: 40px; */
+      height: 38px;
       border-right: 1px solid #eee;
     }
 
+    /* img#schedule {
+      height: 18px;
+      margin-left: 35px;
+      margin-right: 5px;
+    } */
+
     a {
       margin-left: 10px;
+      margin-right: 10px;
       font-size: 15px;
       color: rgba(0, 0, 0, 0.8);
       font-weight: bold;
@@ -56,12 +63,9 @@ export const Profile = styled.div`
 
     a {
       display: block;
-      /* margin-left: 30px;
-      margin-right: 10px; */
       margin-top: 2px;
-      font-size: 15px;
-      font-weight: bold;
-      color: rgba(0, 0, 0, 0.8);
+      font-size: 12px;
+      color: #999;
     }
   }
 `;

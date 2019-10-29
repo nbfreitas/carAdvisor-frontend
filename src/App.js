@@ -7,7 +7,7 @@ import { Router } from "react-router-dom";
 import "./config/ReactotronConfig";
 
 // import Header from "./components/Header";
-import Header from "./components/Header/index";
+// import Header from "./components/Header/index";
 import Routes from "./routes";
 import history from "./services/history";
 
@@ -20,7 +20,7 @@ function App() {
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <Router history={history}>
-          <Header />
+          {/* <Header /> */}
           <Routes />
           <GlobalStyle />
           <ToastContainer autoClose={5000} />

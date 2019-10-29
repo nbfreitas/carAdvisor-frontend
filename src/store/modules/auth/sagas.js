@@ -17,10 +17,10 @@ export function* signIn({ payload }) {
 
     const { token, user } = response.data;
 
-    if (!user.provider) {
-      toast.error("Usuário não é prestador");
-      return;
-    }
+    // if (!user.provider) {
+    //   toast.error("Usuário não é prestador");
+    //   return;
+    // }
 
     api.defaults.headers.Authorization = `Bearer ${token}`;
 
@@ -35,16 +35,16 @@ export function* signIn({ payload }) {
 
 export function* signUp({ payload }) {
   try {
-    const { name, email, password } = payload;
+    const { name, email, password, provider } = payload;
 
     yield call(api.post, "users", {
       name,
       email,
       password,
-      provider: true
+      provider
     });
 
-    history.push("/login");
+    history.push("/");
   } catch (err) {
     toast.error("Falha no cadastro, verifique seus dados");
 

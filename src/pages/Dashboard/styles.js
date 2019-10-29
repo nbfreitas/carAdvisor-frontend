@@ -7,12 +7,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  background: #eff1f3;
+  background: #fff;
   height: 780px;
-  /* border-radius: 10px; */
+  /* border-radius: 10px;
   -webkit-box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset;
   -moz-box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset;
-  box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset;
+  box-shadow: 0px 1px 5px 2px rgba(220, 220, 220, 1) inset; */
 
   header {
     display: flex;
