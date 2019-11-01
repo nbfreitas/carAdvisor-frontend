@@ -1,33 +1,46 @@
 import React from "react";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.svg";
+// import schedule from "../../assets/calendar.svg";
 
 import Notifications from "../Notifications";
 
 import { Container, Content, Profile } from "./styles";
 
 export default function Header() {
-  // const profile = useSelector(state => state.user.profile);
+  const profile = useSelector(state => state.user.profile);
 
   return (
     <Container>
       <Content>
         <nav>
-          <Link to="/">
-            <img src={logo} alt="CarAdvisor" />
-          </Link>
-          <Link to="/dashboard">Agendamentos</Link>
-          <Link to="/new">Adicionar</Link>
+          {profile.provider ? (
+            <Link to="/carsProvider">
+              <img id="logo" src={logo} alt="CarAdvisor" />
+            </Link>
+          ) : (
+            <Link to="/cars">
+              <img id="logo" src={logo} alt="CarAdvisor" />
+            </Link>
+          )}
+
+          {profile.provider ? (
+            <Link to="/dashboard">Agendamentos</Link>
+          ) : (
+            <Link to="/dashboardClient">Agendamentos</Link>
+          )}
+
+          {profile.provider ? <Link to="/new">Adicionar</Link> : ""}
         </nav>
 
         <aside>
-          <Notifications />
+          {profile.provider ? <Notifications /> : ""}
 
           <Profile>
             <div>
-              {/* <strong>{profile.name}</strong> */}
+              <strong>{profile.name}</strong>
               <Link to="/profile">Meu perfil</Link>
             </div>
           </Profile>

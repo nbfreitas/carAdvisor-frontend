@@ -11,10 +11,10 @@ form#auth {
 }
 
 form#auth input {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   border: 0;
   border-radius: 4px;
-  width: 300px;
+  /* width: 200px; */
   height: 44px;
   padding: 0 15px;
   color: #333;
@@ -22,19 +22,13 @@ form#auth input {
 }
 
 form#auth input::placeholder {
-  color: rgba(153, 153, 153, 0.7);
-}
-
-form#auth span {
-  color: #3b9eff;
-  margin: 0 0 10px;
-  font-weight: bold;
+  color: rgba(220, 220, 220, 1);
 }
 
 form#auth button {
   margin: 5px 0 0;
   height: 44px;
-  width: 300px;
+  width: 179px;
   background: #3b9eff;
   font-weight: bold;
   color: #fff;

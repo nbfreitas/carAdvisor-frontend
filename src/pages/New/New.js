@@ -33,11 +33,11 @@ class New extends Component {
 
     await api.post('cars', data)
 
-    this.props.history.push('/');
+    this.props.history.push('/carsProvider');
   }
 
   handleImage = e => {
-    this.setState({ image: e.target.files[0] });
+    this.setState({ image: e.target.files[0], file: URL.createObjectURL(e.target.files[0])});
   }
 
   handleChange = e => {
@@ -47,9 +47,13 @@ class New extends Component {
   render(){
     return (
       <form id="new-car" onSubmit={this.handleSubmit}>
-        <input type="file" onChange={this.handleImage}/>
+        <input type="file" onChange={this.handleImage} />
 
-        <br></br><br></br>
+        <br/>
+
+        <img src={this.state.file} alt="car"/> 
+
+        <br/>
 
         <input 
           type="text" 

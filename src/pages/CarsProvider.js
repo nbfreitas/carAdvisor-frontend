@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import io from "socket.io-client";
-import { BlipChat } from "blip-chat-widget";
 import api from "../services/api";
 
 import './Cars.css';
@@ -39,6 +38,12 @@ class Cars extends Component {
     });
   }
 
+  handleDelete = id => {
+    api.delete(`cars/${id}/delete`);
+
+    window.location.reload(); 
+  };
+
   render(){
     return (
       <section id="car-list">
@@ -63,24 +68,12 @@ class Cars extends Component {
               <br></br>
               <br></br>
               <span className='value'>Preço: R$ {post.value}</span>
+              <button type="button" onClick={() => this.handleDelete(post._id)}>Deletar</button>
             </div>
           </footer>
         </article>
         )) }
-
-        <script src="https://unpkg.com/blip-chat-widget@1.5.*" type="text/javascript"></script>
-        <script>
-          (function () {
-            window.onload = function () {
-              localStorage.removeItem('blipSdkUAccount'); 
-              new BlipChat()
-                .withAppKey('Y2FyYWR2aXNvcjo0NzBjNmEyNi04YWRhLTQ5N2QtODE2NS1iYjgxMDgyMTM3NDg=')
-                .withButton({"color":"#424a60","icon":""})
-              .build();
-            }
-          })();
-        </script>
-        </section> 
+        </section>
     );
   }
 }
