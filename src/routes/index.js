@@ -6,6 +6,7 @@ import SignIn from "../pages/SignIn";
 import SignUp from "../pages/SignUp";
 
 import Cars from "../pages/Cars";
+import CarsProvider from "../pages/CarsProvider";
 import New from "../pages/New/New";
 
 import Dashboard from "../pages/Dashboard";
@@ -16,6 +17,7 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/cars" component={Cars} isPrivate />
+      <Route path="/carsProvider" component={CarsProvider} isPrivate />
       <Route path="/new" component={New} isPrivate />
 
       <Route path="/" exact component={SignIn} />

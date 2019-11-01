@@ -16,11 +16,16 @@ export default function Header() {
     <Container>
       <Content>
         <nav>
-          <Link to="/cars">
-            <img id="logo" src={logo} alt="CarAdvisor" />
-          </Link>
+          {profile.provider ? (
+            <Link to="/carsProvider">
+              <img id="logo" src={logo} alt="CarAdvisor" />
+            </Link>
+          ) : (
+            <Link to="/cars">
+              <img id="logo" src={logo} alt="CarAdvisor" />
+            </Link>
+          )}
 
-          {/* <img id="schedule" src={schedule} alt="schedule" /> */}
           {profile.provider ? (
             <Link to="/dashboard">Agendamentos</Link>
           ) : (

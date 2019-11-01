@@ -23,6 +23,12 @@ form#new-car input {
   margin: 0 0 10px;
 }
 
+form#new-car > img {
+  border-radius: 5%;
+  width: 300px;
+  height: 180px;
+}
+
 form#new-car input::placeholder {
   color: rgba(220, 220, 220, 1);
 }
